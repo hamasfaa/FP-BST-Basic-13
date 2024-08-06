@@ -1,13 +1,16 @@
 const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+const Menu = document.querySelector(".menu");
+const Link = document.querySelectorAll(".link");
 
-function toggleMenu() {
-    if (menu.classList.contains("active")) {
-        menu.classList.remove("active");
-        toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-    } else {
-        menu.classList.add("active");
-        toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-    }
+toggle.addEventListener("click", mobileMenu);
+Link.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    toggle.classList.toggle("active");
+    Menu.classList.toggle("active");
 }
-toggle.addEventListener("click", toggleMenu, false);
+
+function closeMenu() {
+    toggle.classList.remove("active");
+    Menu.classList.remove("active");
+}

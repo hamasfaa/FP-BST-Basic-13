@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap");
 /* --Putih: #fff;
 --Coklat: #1a1616;
 --Hitam: #141212;
@@ -11,82 +12,98 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   background-color: #1a1616;
-  display: block;
+  display: flex;
   justify-content: center;
 }
-nav {
-  background-color: #ffdd2d;
-  border-radius: 40px;
-  margin: 40px 100px;
+li {
+  list-style: none;
 }
 a {
   text-decoration: none;
 }
-.item a {
-  color: #141212;
-  font-weight: 900;
-}
-.item a:hover {
-  opacity: 0.5;
-}
-.item {
-  width: 100%;
-  text-align: center;
-  display: none;
-}
-.menu {
-  list-style: none;
+.navbar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffdd2d;
+  border-radius: 40px;
+  margin: 40px 100px;
+  width: 80%;
+  padding: 1.5px 15px;
 }
-.menu li a {
+.bar {
   display: block;
-  padding: 10px 5px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #141212;
 }
 .toggle {
-  font-size: 20px;
-  margin-right: 0 20px;
-  padding: 0 0 0 20px;
-  color: #141212;
-}
-.toggle a {
-  color: #141212;
-}
-.active .item {
   display: block;
+  cursor: pointer;
 }
-.toggle a:hover i {
-  animation: rotate 0.5s ease-in-out;
+.toggle.active .bar:nth-child(2) {
+  opacity: 0;
 }
 
+.toggle.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.toggle.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+.menu {
+  position: fixed;
+  left: -100%;
+  top: 100px;
+  flex-direction: column;
+  background-color: #ffdd2d;
+  width: 100%;
+  border-radius: 40px;
+  text-align: center;
+  transition: 0.3s;
+  justify-content: center;
+}
+.menu.active {
+  left: 0;
+}
+.item {
+  margin: 4px;
+  font-weight: 900;
+}
+.link {
+  font-weight: 900;
+  color: #141212;
+}
+.link:hover {
+  opacity: 0.5;
+}
 @media all and (min-width: 960px) {
-  nav {
-    border-radius: 40px;
-  }
-  .menu {
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background: none;
-    justify-content: center;
-  }
-  .item {
-    position: relative;
-    display: block;
-    width: auto;
-    margin: 0 10px;
-  }
   .toggle {
     display: none;
   }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: auto;
+    flex-direction: row;
+    background-color: #ffdd2d;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar {
+    justify-content: center;
+    padding: 6px;
+  }
+  .item {
+    margin: 0 20px;
   }
 }
