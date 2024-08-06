@@ -1,0 +1,92 @@
+/* --Putih: #fff;
+--Coklat: #1a1616;
+--Hitam: #141212;
+--Kuning: #ffdd2d; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #1a1616;
+  display: block;
+  justify-content: center;
+}
+nav {
+  background-color: #ffdd2d;
+  border-radius: 40px;
+  margin: 40px 100px;
+}
+a {
+  text-decoration: none;
+}
+.item a {
+  color: #141212;
+  font-weight: 900;
+}
+.item a:hover {
+  opacity: 0.5;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 10px 5px;
+}
+.toggle {
+  font-size: 20px;
+  margin-right: 0 20px;
+  padding: 0 0 0 20px;
+  color: #141212;
+}
+.toggle a {
+  color: #141212;
+}
+.active .item {
+  display: block;
+}
+.toggle a:hover i {
+  animation: rotate 0.5s ease-in-out;
+}
+
+@media all and (min-width: 960px) {
+  nav {
+    border-radius: 40px;
+  }
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+    justify-content: center;
+  }
+  .item {
+    position: relative;
+    display: block;
+    width: auto;
+    margin: 0 10px;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
