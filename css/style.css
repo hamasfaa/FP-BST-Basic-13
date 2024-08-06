@@ -14,6 +14,7 @@ body {
   background-color: #1a1616;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 li {
   list-style: none;
@@ -43,6 +44,10 @@ a {
 .toggle {
   display: block;
   cursor: pointer;
+}
+.toggle:hover {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-in-out;
 }
 .toggle.active .bar:nth-child(2) {
   opacity: 0;
