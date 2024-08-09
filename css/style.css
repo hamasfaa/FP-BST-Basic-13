@@ -11,7 +11,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  background-color: #1a1616;
+  background-color: #141212;
   display: grid;
   place-items: center;
   margin: 0 70px;
@@ -158,6 +158,11 @@ a {
 .profile {
   flex: 2;
 }
+.homepfp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .pictureHome {
   width: 100%;
   height: auto;
@@ -165,8 +170,11 @@ a {
 }
 .home2 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 20px;
+  margin-left: 0px;
+  margin-top: 200px;
 }
 .descHome {
   padding-right: 20px;
@@ -255,6 +263,9 @@ a {
   }
   .descriptionHome {
     gap: 10px;
+    position: relative;
+    
+    left: 40px;
   }
   .navbar {
     justify-content: center;
@@ -291,4 +302,29 @@ a {
     font-size: 40px;
     border-radius: 44px;
   }
+}
+.rectangle {
+  position: relative;
+  
+  bottom: 360px;
+  left: 220px;
+}
+.first {
+  position: relative;
+  bottom: 480px;
+  left: 400px;
+}
+.second {
+  position: absolute;
+  left: 1000px;
+  width: 500px;
+  height: 200px;
+  bottom: 700px;
+}
+.fotodesign {
+  position: relative;
+  left: 400px;
+  bottom: 230px;
+  width: 470px;
+
 }
