@@ -89,7 +89,7 @@ a {
   background-color: #ffdd2d;
   border-radius: 40px;
   margin: 20px 0;
-  width: 80%;
+  width: 50%;
   padding: 1px 15px;
   z-index: 1;
   /* position: fixed;
@@ -176,11 +176,11 @@ a {
   margin-right: auto;
 }
 .pictureHome {
-  width: 100%;
+  width: 120%;
   height: auto;
   position: relative;
+  padding-left: 30%;
 
-  left: 40px;
   /* background-color: white; */
 }
 .home2 {
@@ -188,7 +188,7 @@ a {
   flex-direction: row;
   justify-content: center;
   padding: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
   margin-top: 200px;
   width: 75%;
 }
@@ -395,33 +395,26 @@ a {
   .descIn {
     font-size: 31px;
   }
-}
-.rectangle {
-  position: relative;
 
-  bottom: 360px;
-  left: 220px;
+}
+.rectangle{
+  position: relative;
+  padding-right: 0px;
+  bottom: 400px;
+  left: 50px;
+  
 }
 .first {
   position: relative;
-  bottom: 480px;
-  left: 400px;
+  top: 600px;
+  left: 100px;
 }
-.second {
-  position: absolute;
-  left: 1000px;
-  width: 500px;
-  height: 200px;
-  bottom: 700px;
-}
+
 .fotodesign {
   position: relative;
   left: 400px;
   bottom: 230px;
   width: 470px;
-}
-.about-me {
-  position: relative;
 }
 
 h2 {
@@ -449,7 +442,7 @@ h1 {
   font-weight: 200;
   font-size: 20px;
   line-height: 35px;
-  margin-left: 50px;
+  
 }
 
 .item-1 {
@@ -464,27 +457,28 @@ h1 {
   padding: 5px 15px;
   color: #141212;
   background-color: #ffdd2d;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  left: 160px;
 }
 
 .specs {
   justify-content: space-between;
-  width: 00px;
+  margin-top: 10px;
+  position: relative;
 }
+
+
 
 .item-2 {
   padding: 50px;
   display: flexbox;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
-.see-more {
-  justify-content: center;
-  position: relative;
-  top: 50px;
-  left: 140px;
-}
 
 #portofolio {
   width: 1550px;
@@ -492,13 +486,13 @@ h1 {
   padding: 10px 30px;
   position: relative;
   margin-top: 100px;
-  left: 95px;
+  left: 20px;
 }
 
 .img {
   justify-content: space-between;
   margin-top: 100px;
-  margin-left: 180px;
+  margin-left: 130px;
   width: 600px;
   padding: 60px 20px;
 }
@@ -506,3 +500,30 @@ h1 {
 #row-2 {
   margin-top: 100px;
 }
+
+#about-me{
+  position:relative;
+  right: 40px;
+}
+
+#second{
+  margin-right: 200px;
+  position: relative;
+  flex-direction: column;
+}
+
+.right-side{
+  position: relative;
+  bottom: 250px;
+}
+
+.home2{
+  width: 60%;
+  position: relative;
+  left: 10%;
+}
+
+.aboutme {
+  bottom: 200px;
+}
+
