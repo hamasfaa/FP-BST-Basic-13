@@ -35,7 +35,8 @@ a {
   z-index: 2; /* Ensure content is above the background overlay */
 }
 
-.background-only { /*buat dekor background*/
+.background-only {
+  /*buat dekor background*/
   position: absolute;
   top: 20px;
   left: 200px;
@@ -45,14 +46,13 @@ a {
   pointer-events: none;
 }
 
-
-.pic1{
+.pic1 {
   position: relative;
   max-width: 505px;
   max-height: 817px;
 }
 
-.picLogo{
+.picLogo {
   position: relative;
   margin-top: 4em;
   max-width: 640px;
@@ -63,9 +63,7 @@ a {
   display: block;
 }
 
-
-
-.inline-block{
+.inline-block {
   display: inline-block;
 }
 
@@ -215,6 +213,58 @@ a {
   border: 5px solid #fff;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
 @media all and (min-width: 480px) {
   .name {
     font-size: 20px;
@@ -229,13 +279,12 @@ a {
   .descriptionHome {
     gap: 1px;
   }
-  .pic1{
+  .pic1 {
     position: relative;
     min-height: 294px;
     min-width: 182px;
-
   }
-  .descIn{
+  .descIn {
     font-size: 14px;
   }
 }
@@ -251,10 +300,10 @@ a {
     font-size: 20px;
     border-radius: 22px;
   }
-  .descIn{
+  .descIn {
     font-size: 22px;
   }
-  .pic1{
+  .pic1 {
     max-width: 505px;
     max-height: 817px;
   }
@@ -278,7 +327,7 @@ a {
     border-radius: 28px;
   }
 
-  .descIn{
+  .descIn {
     font-size: 24px;
   }
 }
@@ -302,7 +351,7 @@ a {
   .descriptionHome {
     gap: 10px;
     position: relative;
-    
+
     left: 40px;
   }
   .navbar {
@@ -324,7 +373,7 @@ a {
     font-size: 32px;
     border-radius: 34px;
   }
-  .descIn{
+  .descIn {
     font-size: 28px;
   }
 }
@@ -343,13 +392,13 @@ a {
     font-size: 40px;
     border-radius: 44px;
   }
-  .descIn{
+  .descIn {
     font-size: 31px;
   }
 }
 .rectangle {
   position: relative;
-  
+
   bottom: 360px;
   left: 220px;
 }
@@ -370,15 +419,14 @@ a {
   left: 400px;
   bottom: 230px;
   width: 470px;
-
 }
-.about-me{
+.about-me {
   position: relative;
 }
 
-h2{
-  color: #FFFFFF;  
-  font-family: 'Inter';
+h2 {
+  color: #ffffff;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-size: 20px;
@@ -388,15 +436,15 @@ h2{
 }
 
 .flex-container.equipment {
-display: flex;
-width: 300px;
-position: absolute;
-right: 600px;
+  display: flex;
+  width: 300px;
+  position: absolute;
+  right: 600px;
 }
 
 h1 {
-  color: #FFFFFF;  
-  font-family: 'Inter';
+  color: #ffffff;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-size: 20px;
@@ -404,13 +452,13 @@ h1 {
   margin-left: 50px;
 }
 
-.item-1{
+.item-1 {
   width: 600px;
 }
 
-.see-more{
+.see-more {
   font-size: 25px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 800;
   border-radius: 34px;
   padding: 5px 15px;
@@ -418,28 +466,27 @@ h1 {
   background-color: #ffdd2d;
 }
 
-.specs{
+.specs {
   justify-content: space-between;
   width: 00px;
 }
 
-.item-2{
-  padding: 50px ;
+.item-2 {
+  padding: 50px;
   display: flexbox;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 100px;
-
 }
 
-.see-more{
+.see-more {
   justify-content: center;
   position: relative;
   top: 50px;
   left: 140px;
 }
 
-#portofolio{
+#portofolio {
   width: 1550px;
   justify-content: center;
   padding: 10px 30px;
@@ -448,14 +495,14 @@ h1 {
   left: 95px;
 }
 
-.img{
-  justify-content:space-between;
+.img {
+  justify-content: space-between;
   margin-top: 100px;
   margin-left: 180px;
   width: 600px;
   padding: 60px 20px;
 }
 
-#row-2{
+#row-2 {
   margin-top: 100px;
 }
