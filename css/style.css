@@ -28,7 +28,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100vh;
+  max-width: 100%;
 }
 
 .content {
@@ -43,6 +43,20 @@ a {
   height: 100%;
   z-index: -1;
   pointer-events: none;
+}
+
+
+.pic1{
+  position: relative;
+  max-width: 505px;
+  max-height: 817px;
+}
+
+.picLogo{
+  position: relative;
+  margin-top: 4em;
+  max-width: 640px;
+  max-height: 320px;
 }
 
 .block {
@@ -215,6 +229,15 @@ a {
   .descriptionHome {
     gap: 1px;
   }
+  .pic1{
+    position: relative;
+    min-height: 294px;
+    min-width: 182px;
+
+  }
+  .descIn{
+    font-size: 14px;
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -227,6 +250,13 @@ a {
   .cv {
     font-size: 20px;
     border-radius: 22px;
+  }
+  .descIn{
+    font-size: 22px;
+  }
+  .pic1{
+    max-width: 505px;
+    max-height: 817px;
   }
 }
 
@@ -246,6 +276,10 @@ a {
   .cv {
     font-size: 26px;
     border-radius: 28px;
+  }
+
+  .descIn{
+    font-size: 24px;
   }
 }
 
@@ -290,6 +324,9 @@ a {
     font-size: 32px;
     border-radius: 34px;
   }
+  .descIn{
+    font-size: 28px;
+  }
 }
 @media all and (min-width: 1600px) {
   body {
@@ -305,6 +342,9 @@ a {
   .cv {
     font-size: 40px;
     border-radius: 44px;
+  }
+  .descIn{
+    font-size: 31px;
   }
 }
 .rectangle {
