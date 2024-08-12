@@ -488,7 +488,7 @@ h1 {
   width: 1550px;
   justify-content: center;
   padding: 10px 30px;
-  position: absolute;
+  position: relative;
   margin-top: 100px;
   left: 190px;
   
@@ -531,6 +531,7 @@ h1 {
 .aboutme {
   bottom: 200px;
 }
+
 
 
 
