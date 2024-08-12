@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -15,6 +16,9 @@ body {
   display: grid;
   place-items: center;
   margin: 0 70px;
+  position: relative;
+  right: 18%;
+  
 }
 li {
   list-style: none;
@@ -484,9 +488,10 @@ h1 {
   width: 1550px;
   justify-content: center;
   padding: 10px 30px;
-  position: relative;
+  position: absolute;
   margin-top: 100px;
-  left: 20px;
+  left: 190px;
+  
 }
 
 .img {
@@ -526,4 +531,6 @@ h1 {
 .aboutme {
   bottom: 200px;
 }
+
+
 
